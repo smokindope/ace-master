@@ -5,7 +5,7 @@ acestream & search engines two in one in docker container turns it into iptv ser
 ## Build:
 
 ```
-git clone https://github.com/vstavrinov/acestream-service.git
+git clone https://github.com/smokindope/ace-master.git
 cd acestream-service
 docker build -t acestream-service .
 ```
@@ -31,12 +31,12 @@ host-port -> container-port -> service-port
 For example:
 
 ```
-docker run -d -e SCHEME=http -e ENTRY=8000 -e PORT=80 -p 8000:80 acestream-service
+docker run -d -e SCHEME=http -e ENTRY=8000 -e PORT=80 -p 8000:80 ace-master
 ```
 Or you can omit build phase and pull and run it directly from repository:
 
 ```
-docker run -d -e SCHEME=http -e ENTRY=8000 -e PORT=80 -p 8000:80 vstavrinov/acestream-service
+docker run -d -e SCHEME=http -e ENTRY=8000 -e PORT=80 -p 8000:80 smokindope/ace-master
 ```
 
 Finally you can watch tv:
