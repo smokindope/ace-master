@@ -15,7 +15,7 @@ on:
 
 env:
   DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-  DOCKER_REPO: acestream-service
+  DOCKER_REPO: ace-master
   PORT: 7000
   ENTRY: 8000
 
