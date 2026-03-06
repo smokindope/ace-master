@@ -1,4 +1,4 @@
-FROM vstavrinov/acestream-engine
+FROM smokindope/ace-engine
 WORKDIR /srv/ace
 ENV COLUMNS=116
 ENV PYTHONDONTWRITEBYTECODE=0
@@ -12,7 +12,7 @@ RUN apt-get update; apt-get --yes install nginx; apt-get clean;  \
     rmdir --verbose /var/lib/nginx;                              \
     ln --symbolic --force /dev/shm/nginx/lib  /var/lib/nginx;    \
     pip install --no-cache-dir gunicorn flask                    \
-        git+https://github.com/vstavrinov/acestream_search.git
+        git+https://github.com/smokindope/ace-search.git
 COPY default.conf /etc/nginx/sites-available/default
 COPY nginx.conf /etc/nginx/
 USER ace
