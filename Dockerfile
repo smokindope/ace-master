@@ -1,4 +1,4 @@
-FROM smokindope/ace-engine
+FROM vstavrinov/acestream-engine
 WORKDIR /srv/ace
 ENV COLUMNS=116
 ENV PYTHONDONTWRITEBYTECODE=0
